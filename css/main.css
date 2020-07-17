@@ -1,0 +1,188 @@
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+/* @font-face {
+    font-family: greatvibes;
+    src: url(../fonts/GreatVibes-Regular.ttf);
+} */
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    background: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.main-frame{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   
+}
+.home{
+    
+    width: auto;
+    height: auto;
+    text-align: center;
+    z-index: 0;
+    pointer-events: none;
+    color: #ffffff;
+}
+.home p{
+    letter-spacing: 10px;
+    font-family: caviar;
+    margin-top: 0%;
+}
+.home h2{
+    font-family: 'Great Vibes';
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 100px;
+}
+
+.bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-family: caviar;
+    list-style: none;
+}
+.bottom a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.bottom a:hover{
+    color: #8a8a8a;
+}
+.about{
+    width: 900px;
+    height: auto;
+    text-align: center;
+    z-index: 0;
+    pointer-events: none;
+    color: #ffffff;
+    font-family: caviar;
+    
+
+}
+.about::after{
+    content: "";
+    background: url(../img/logo/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    background-size: 80%;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+}
+.contact{
+    font-family: caviar;
+    position: relative;
+	float: left;
+	width: 29%;
+	height: 0;
+	margin: 2%;
+	padding-bottom: 20%;
+    pointer-events: none;
+    text-align: center;
+    top: -20%;
+}
+.us{
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 100%;
+	/* -webkit-transform: translate3d(0, 0, 0); */
+	/* prevents flicker */
+    -webkit-overflow-scrolling: touch;
+    
+    position: absolute;
+    overflow: hidden;
+}
+.us img{
+    position: relative;
+	left: 50%;
+	display: block;
+	height: 100%;
+	max-height: 500px;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.contact h2{
+    padding-top: 70%;
+}
+
+.botm{
+ position: relative;
+}
+
+
+@media screen and (max-width:50em) {
+    .icon {
+        width: 80px;
+    }
+    .name{
+        width: 250px;
+    }
+    .home{
+        padding-bottom: 30%;
+    }
+    .home p {
+        font-size: 0.5em;
+        letter-spacing: 3px;
+    }
+
+    .bottom {
+        bottom: 0px;
+        font-size: 0.8em;
+    }
+
+    .about {
+        font-size: 0.9em;
+        letter-spacing: normal;
+        padding: 50px 20px 0;
+
+    }
+    .contact h2{
+        font-size: 1em;
+    }
+    .contact p{
+        font-size: 0.6em;
+    }
+}

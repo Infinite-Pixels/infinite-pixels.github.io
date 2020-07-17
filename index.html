@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infinite Pixels</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">    
+</head>
+<body>
+    <iframe src="bg/index.html" class="main-frame" frameborder="0"></iframe>
+    <div class="container">
+        
+    </div>
+    <div class="botm">
+        <a href="#"><img src="img/social_icons/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="img/social_icons/instagram.svg" alt="instagram"></a>
+    </div>
+    <div class="bottom">
+        <a href="events/index.html"  class="photos">PHOTOS</a>
+        <a href="#home" class="hme">HOME</a>
+        <a href="#about"  class="abt"  >ABOUT</a>
+        <a href="#contact_us" class="contact-us">CONTACT US</a>
+    </div>
+    <script src= "https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script>
+        let home='<div class="home"><img class="icon" src="img/logo/logo.svg" alt="logo" width="200"><br><img class="name" src="img/logo/name.svg" alt="logo" width="600"><p>PHOTOGRAPHY</p></div>';
+        let about='<div class="about"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque esse minus sunt minima molestias nisi magnam incidunt eum fugit, aperiam pariatur? Temporibus, placeat nihil! Cum, iste nisi? Placeat, impedit corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam recusandae temporibus mollitia magni, ducimus natus, repudiandae quidem, quia ut rerum at culpa minus. Nulla esse dolor quod quibusdam pariatur.</p></div>';
+        let photos='<div class="img"><img src="img/photos/1.jpeg" alt=""><img src="img/photos/2.jpeg" alt=""><img src="img/photos/3.jpeg" alt=""><img src="img/photos/4.jpeg" alt=""><img src="img/photos/5.jpg" alt=""><img src="img/photos/6.jpeg" alt=""><img src="img/photos/7.jpg" alt=""><img src="img/photos/8.jpg" alt=""><img src="img/photos/9.jpg" alt=""><img src="img/photos/10.jpg" alt=""></div>';
+        let contact='<div class="contact"><div class="us"><img src="img/photos/6.jpeg" alt="Abhishek"></div><h2>Abhishek Goud</h2><p>Ph: 7013357451 <br>9573899535 <br>Email: goudabhishek123@gmail.com</p></div><div class="contact"><div class="us"><img src="img/photos/5.jpg" alt="GSK_Reddy"></div><h2>GSK Reddy</h2><p>Ph: 7901081101 <br>Email: skreddygujjula@gmail.com</p></div>';
+
+        window.onload=init;
+
+        function init(){
+            $(".container").html(home);
+        }
+        $(document).ready(function() { 
+            $('.hme').click(function() { 
+                $(".container").html(home);
+            });
+
+            $('.abt').click(function() { 
+                $(".container").html(about);
+            });
+            $('.contact-us').click(function() { 
+                $(".container").html(contact);
+            });
+
+        });
+    </script>
+</body>
+</html>
+
